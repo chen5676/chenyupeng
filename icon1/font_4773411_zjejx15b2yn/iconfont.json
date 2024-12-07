@@ -1,0 +1,23 @@
+{
+  "id": "4773411",
+  "name": "ship",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "731660",
+      "name": "联系人",
+      "font_class": "lianxiren",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "4553734",
+      "name": "视频通话-填充",
+      "font_class": "shipintonghua-tianchong",
+      "unicode": "e7dd",
+      "unicode_decimal": 59357
+    }
+  ]
+}
