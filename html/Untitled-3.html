@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        container{
+            display: block;
+            width: 595px;
+            height: 330px;
+            background-color: white;
+            margin: 50px auto;
+            border-radius:10px;
+            box-shadow: 2px 2px 10px 1px lightseagreen;
+        }
+        #welcome{
+            display: flex;
+            width: 520px;
+            height: 30px;
+            background-color: white;
+            top:20px;
+            left:30px;
+            position: relative;
+        }
+        .img1 img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            box-shadow: 2px 1px 1px 1px black;
+        }
+        span{
+            font-size: 15px;
+            letter-spacing: 0px;
+        }
+        .img2 img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            right: 0;
+            position: absolute;
+        }
+        section{
+            display: flex;
+            width: 500px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: #f7fdff;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        box{
+            display: block;
+            width: 530px;
+            height: 25px;
+            background-color: white;
+            top: 70px;
+            left: 30px;
+            position: relative;
+        }
+        people{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            background-color: white;
+            left: 320px;
+        }
+        call{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            background-color: white;
+            left: 330px;
+        }
+        read{
+            display: flex;
+            width: 50px;
+            height: 30px;
+            background-color: #bef6ff;
+            position: relative;
+            top: 70px;
+            left: 30px;
+            border-radius: 5px;
+        }
+        unread{
+            display: flex;
+            width: 50px;
+            height: 30px;
+            background-color: #e6f9fc;
+            position: relative;
+            top: 80px;
+            left: 30px;
+            border-radius: 5px;
+        }
+        box1{
+            width: 20px;
+            height: 20px;
+            background-color: #bef6ff;
+            top: 5px;
+            left: 5px;
+            position: relative;
+        }
+        box2{
+            width: 20px;
+            height: 20px;
+            background-color: #e6f9fc;
+            top: 5px;
+            left: 5px;
+            position: relative;
+        }
+        box3{
+            width: 20px;
+            height: 20px;
+            background-color: #bef6ff;
+            top: 5px;
+            left: 5px;
+            position: relative;
+        }
+        box4{
+            width: 20px;
+            height: 20px;
+            background-color: #e6f9fc;
+            top: 5px;
+            left: 5px;
+            position: relative;
+        }
+        message1{
+            display: flex;
+            width: 400px;
+            height: 40px;
+            background: linear-gradient(to right,#e6f9fc,white);
+            position: relative;
+            top: 10px;
+            left: 90px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px 1px gray;
+        }
+        message2{
+            display: flex;
+            width: 400px;
+            height: 40px;
+            background: linear-gradient(to right,#e6f9fc,white);
+            position: relative;
+            top: 20px;
+            left: 90px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px 1px gray;
+        }
+        message3{
+            display: flex;
+            width: 400px;
+            height: 40px;
+            background: linear-gradient(to right,#e6f9fc,white);
+            position: relative;
+            top: 30px;
+            left: 90px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px 1px gray;
+        }
+        span{
+            font-size: large;
+        }
+        .img3 img{
+            top: 5px;
+            left: 10px;
+            position: relative;
+        }
+        .img4 img{
+            top: 5px;
+            left: 10px;
+            position: relative;
+        }
+        .img5 img{
+            top: 5px;
+            left: 10px;
+            position: relative;
+        }
+        box5{
+            width: 80px;
+            height: 20px;
+            position: relative;
+            background-color:#e6f9fc;
+            top: 7px;
+            left: 20px;
+        }
+        p{
+            font-size: 8px;
+        }
+        box_date{
+            width: 50px;
+            height: 20px;
+            position: relative;
+            background-color: #f3fbfc;
+            top: 7px;
+            left: 90px;
+        }
+        box_delete{
+            width: 30px;
+            height: 10px;
+            position: relative;
+            background-color: white;
+            top: 7px;
+            left: 130px;
+        }
+        box_respond{
+            width: 30px;
+            height: 10px;
+            position: relative;
+            background-color: white;
+            top: 7px;
+            left: 150px;
+        }
+        write{
+            display: block;
+            width: 40px;
+            height: 20px;
+            position: relative;
+            background-color:#39c8d2;
+            left: 500px;
+            top: 10px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 20px;
+        }
+        p1{
+            font-size: 10px;
+        }
+        .img6 img{
+            top: 18px;
+            height: 25px;
+            width: 590px;
+            position: relative;
+        }
+    </style>
+    <link rel="stylesheet" href="./download (3)/font_4773411_zjejx15b2yn/iconfont.css">
+    <link rel="stylesheet" href="./download (5)/font_4773496_4wkrs3x063y/iconfont.css">
+</head>
+<body>
+    <container>
+        <div id="welcome">
+            <div id="image" class="img1">
+                <img src="./images/3e9d26a8c47bf4b9053840c563f47a0.jpg">
+            </div>
+            <strong><span>&nbsp;欢迎回来</span></strong>
+            <div id="image" class="img2">
+                <img src="./images/2_03.jpg">
+            </div>
+        </div>
+        <section>
+            <div><a href="">今日</a></div>
+            <div style="color: #a6e6eb;"><a href="">讯息</a></div>
+            <div><a href="">服务</a></div>
+            <div><a href="">校园</a></div>
+            <div><a href="">我的</a></div>
+        </section>
+        <box>
+            <strong><span>邮箱动态-收件箱</span></strong>
+            <people>
+                <a href=""><span class="iconfont icon-lianxiren"></span></a>
+            </people>
+            <call>
+                <a href=""><span class="iconfont icon-shipintonghua-tianchong"></span></a>
+            </call>
+        </box>
+        <a href=""><read>
+            <box1>
+                <span class="iconfont icon-xiaoyuanquan1"></span>
+            </box1>
+            <box3>
+                <span class="iconfont icon-stop"></span>
+            </box3>
+        </read>
+        <unread>
+            <box2>
+                <span class="iconfont icon-xiaoyuanquan"></span>
+            </box2>
+            <box4>
+                <span class="iconfont icon-stop"></span>
+            </box4>
+        </unread></a>
+        <message1>
+            <div id="image" class="img3">
+                <img src="./images/3_08.jpg">
+            </div>
+            <box5>
+                <p>邮件缩略信息。。。</p>
+            </box5>
+            <box_date>
+                <p>2024.2.20</p>
+            </box_date>
+            <a href="">
+                <box_delete>
+                    <p>删除</p>
+                </box_delete>
+            </a>
+            <a href="">
+                <box_respond>
+                    <p>回复</p>
+                </box_respond>
+            </a>
+        </message1>
+        <message2>
+            <div id="image" class="img4">
+                <img src="./images/4_03.jpg">
+            </div>
+            <box5>
+                <p>邮件缩略信息。。。</p>
+            </box5>
+            <box_date>
+                <p>2024.2.20</p>
+            </box_date>
+            <a href="">
+                <box_delete>
+                    <p>删除</p>
+                </box_delete>
+            </a>
+            <a href="">
+                <box_respond>
+                    <p>回复</p>
+                </box_respond>
+            </a>
+        </message2>
+        <message3>
+            <div id="image" class="img5">
+                <img src="./images/5_06.jpg">
+            </div>
+            <box5>
+                <p>邮件缩略信息。。。</p>
+            </box5>
+            <box_date>
+                <p>2024.2.20</p>
+            </box_date>
+            <a href="">
+                <box_delete>
+                    <p>删除</p>
+                </box_delete>
+            </a>
+            <a href="">
+                <box_respond>
+                    <p>回复</p>
+                </box_respond>
+            </a>
+        </message3>
+        <a href="">
+            <write>
+                <p1>去写信</p1>
+            </write>
+        </a>
+        <div id="image" class="img6">
+            <img src="./images/6_11.jpg"
+        </div>
+    </container>
+</body>
+</html>
